@@ -23,17 +23,17 @@
 
   </head>
 
-  <body>
+  <body id="clouds">
+
+    <div class="container" id="header">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <span class="fs-4">Weather Dashboard</span>
+        </header>
+    </div>
 
 <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <span class="fs-4">Weather Dashboard</span>
-    </header>
-</div>
 
-<div class="container">
-
-    <div class="row">
+    <div class="row" id="sidebar">
         <div class="col-sm-4">
             <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
@@ -44,22 +44,27 @@
                 </ul>
                 <hr>
             </div>
-        </div>
-        
+        </div>    
+
     <div class="col-sm-8">
-        <div class="container"><h4>Chicago Forecast</h4></div>
+        <div class="container">
+            <div class="col-12"id="weatherContainer">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-8">
+        <div class="container">
+            <div class="col-12"id="forecast">
+            </div>
+        </div>
     </div>
 
 </div>
 
-
-
-
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 

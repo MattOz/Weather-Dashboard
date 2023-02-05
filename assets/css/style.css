@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#weatherContainer {
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238);
+    padding: 5px;
+    height: 30vh;
+
+    font-size: large;
+}
+
+#clouds {
+    background-image: url(../images/clouds.jpg);
+    background-size:cover;
+    opacity: 90%;
+}
+
+#header {
+    background-color: rgb(238, 238, 238);
+    width: 100%;  
+    border-bottom: 1px black;
+}
+
+#forecast {
+    
+}
