@@ -79,3 +79,11 @@ window.onload = function () {
         listItem.classList.add('btn-primary');
     }
 }
+
+var clearButton = document.getElementById('clearButton');
+clearButton.addEventListener('click', clearHistory);
+
+function clearHistory () {
+    localStorage.clear();
+    location.reload();
+}
