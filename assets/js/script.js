@@ -49,7 +49,7 @@ function getWeather () {
         var currentTemp = $('<p>');
         var currentWind = $('<p>');
         var currentHumidity = $('<p>');
-        console.log(data)
+        console.log(data);
         //City Name
         currentCity.text(data.city.name);
         weatherContainer.append(currentCity);
@@ -62,6 +62,62 @@ function getWeather () {
         //Humidity
         currentHumidity.text("Humidity: " + data.list[0].main.humidity + "%");
         weatherContainer.append(currentHumidity);
+
+        var day1 = $('#day1');
+        var day1Temp = $('<p>');
+        var day1Wind = $('<p>');
+        var day1Humid = $('<p>');
+        day1Temp.text("Temp: " + data.list[1].main.temp + "°");
+        day1.append(day1Temp);
+        day1Wind.text("Wind: " + data.list[1].wind.speed + "MPH")
+        day1.append(day1Wind);
+        day1Humid.text("Humidity: " + data.list[1].main.humidity + "%");
+        day1.append(day1Humid);
+
+        var day2 = $('#day2');
+        var day2Temp = $('<p>');
+        var day2Wind = $('<p>');
+        var day2Humid = $('<p>');
+        day2Temp.text("Temp: " + data.list[2].main.temp + "°");
+        day2.append(day2Temp);
+        day2Wind.text("Wind: " + data.list[2].wind.speed + "MPH")
+        day2.append(day2Wind);
+        day2Humid.text("Humidity: " + data.list[2].main.humidity + "%");
+        day2.append(day2Humid);
+
+        var day3 = $('#day3');
+        var day3Temp = $('<p>');
+        var day3Wind = $('<p>');
+        var day3Humid = $('<p>');
+        day3Temp.text("Temp: " + data.list[3].main.temp + "°");
+        day3.append(day3Temp);
+        day3Wind.text("Wind: " + data.list[3].wind.speed + "MPH")
+        day3.append(day3Wind);
+        day3Humid.text("Humidity: " + data.list[3].main.humidity + "%");
+        day3.append(day3Humid);
+
+        var day4 = $('#day4');
+        var day4Temp = $('<p>');
+        var day4Wind = $('<p>');
+        var day4Humid = $('<p>');
+        day4Temp.text("Temp: " + data.list[4].main.temp + "°");
+        day4.append(day4Temp);
+        day4Wind.text("Wind: " + data.list[4].wind.speed + "MPH")
+        day4.append(day4Wind);
+        day4Humid.text("Humidity: " + data.list[4].main.humidity + "%");
+        day4.append(day4Humid);
+
+        var day5 = $('#day5');
+        var day5Temp = $('<p>');
+        var day5Wind = $('<p>');
+        var day5Humid = $('<p>');
+        day5Temp.text("Temp: " + data.list[5].main.temp + "°");
+        day5.append(day5Temp);
+        day5Wind.text("Wind: " + data.list[5].wind.speed + "MPH")
+        day5.append(day5Wind);
+        day5Humid.text("Humidity: " + data.list[5].main.humidity + "%");
+        day5.append(day5Humid);
+
     });
 }
 

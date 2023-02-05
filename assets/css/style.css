@@ -6,8 +6,7 @@
     box-sizing: border-box;
     background-color: rgb(238, 238, 238);
     padding: 5px;
-    height: 30vh;
-
+    height: auto;
     font-size: large;
 }
 
@@ -24,7 +23,9 @@
 }
 
 #forecast {
-}
-
-#userHistory {
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238);
+    padding: 5px;
+    height: auto;
+    font-size: medium;
 }
