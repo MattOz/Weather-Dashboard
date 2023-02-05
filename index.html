@@ -26,50 +26,34 @@
   <body>
 
 <div class="container">
-
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <span class="fs-4">Weather Dashboard</span>
     </header>
+</div>
 
-    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          <span class="fs-4"><input class="form-control" type="text" placeholder="Default input" aria-label="default input example"></span>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-              Chicago
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-              New York
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-              Los Angeles
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-              Houston
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link link-dark">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-              Pheonix
-            </a>
-          </li>
-        </ul>
-        <hr>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4"><input class="form-control" type="text" placeholder="Default input" aria-label="default input example" id="userInput"></span>
+                <button type="button" class="btn btn-primary" id="searchButton">Search</button>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto" id ="userHistory">
+                </ul>
+                <hr>
+            </div>
+        </div>
+        
+    <div class="col-sm-8">
+        <div class="container"><h4>Chicago Forecast</h4></div>
+    </div>
 
 </div>
+
+
+
 
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
