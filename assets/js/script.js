@@ -19,7 +19,7 @@ function getCoords () {
     weatherContainer.text("");
     //Gets user input from search and making api call based on search
     var userInput = document.getElementById('userInput').value;
-    var requestUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + userInput + '&limit=5&appid=6605e894b2d120e2bc470b6d7f80fe1b'
+    var requestUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + userInput + '&limit=5&appid=6605e894b2d120e2bc470b6d7f80fe1b'
 
     //Gets the latitude and longitude of 1st result of search
     fetch(requestUrl)
@@ -52,7 +52,7 @@ function getCoords () {
 
 //Gets weather data with latitude and longitude of searched location
 function getWeather () {
-    var requestUrl = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + userLat + '&lon=' + userLon + '&appid=6605e894b2d120e2bc470b6d7f80fe1b&units=imperial'
+    var requestUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + userLat + '&lon=' + userLon + '&appid=6605e894b2d120e2bc470b6d7f80fe1b&units=imperial'
     fetch(requestUrl)
     .then(function (response) {
       return response.json();
