@@ -6,8 +6,9 @@
     box-sizing: border-box;
     background-color: rgb(238, 238, 238);
     padding: 5px;
-    height: auto;
+    height: 25vh;
     font-size: large;
+    border-bottom: 1px solid black;
 }
 
 #clouds {
@@ -28,4 +29,12 @@
     padding: 5px;
     height: auto;
     font-size: medium;
+}
+
+#day1, #day2, #day3, #day4{
+    border-right: 1px solid black;
+}
+
+#hide {
+    visibility: hidden;
 }
