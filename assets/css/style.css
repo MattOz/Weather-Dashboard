@@ -4,11 +4,15 @@
 
 #weatherContainer {
     box-sizing: border-box;
-    background-color: rgb(238, 238, 238);
+    background-color: white;
     padding: 5px;
     height: 25vh;
     font-size: large;
     border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 10px;
 }
 
 #clouds {
@@ -18,17 +22,26 @@
 }
 
 #header {
-    background-color: rgb(238, 238, 238);
+    background-color: white;
     width: 100%;  
-    border-bottom: 1px black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 10px;
+    font-weight:900;
 }
 
 #forecast {
     box-sizing: border-box;
-    background-color: rgb(238, 238, 238);
+    background-color: white;
     padding: 5px;
     height: auto;
     font-size: medium;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 10px;
 }
 
 #day1, #day2, #day3, #day4{
@@ -37,4 +50,17 @@
 
 #hide {
     visibility: hidden;
+}
+
+#sidebar {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px;
+    height: auto;
+    font-size: medium;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 10px;
 }

@@ -43,12 +43,18 @@ function getCoords () {
     listItem.textContent = userInput;
     userContainer.append(listItem);
     listItem.classList.add('btn-primary')
+    listItem.setAttribute('name', userInput);
+    listItem.onclick = function () {
+        var form = document.getElementById("userInput");
+        form.value = '';
+        var userInput = listItem.name
+        console.log(userInput);
+        form.textContent = userInput;
+        var form = document.getElementById("userInput");
+        form.value = userInput;
+        searchButton.click();
+    }
 }
-
-// function displayItem() {
-//     var buttonVal = $('.btn-primary').text();
-//     console.log(buttonVal);
-//   }
 
 //Gets weather data with latitude and longitude of searched location
 function getWeather () {
@@ -64,11 +70,12 @@ function getWeather () {
         var currentTemp = $('<p>');
         var currentWind = $('<p>');
         var currentHumidity = $('<p>');
-        console.log(data);
+        var lineBreak = $('<hr>');
         //City Name
         currentCity.text(data.city.name);
         weatherContainer.append(currentCity);
         weatherContainer.append(today.format('MMM D, YYYY'))
+        weatherContainer.append(lineBreak);
         //Temperature
         currentTemp.text("Current Temp: " + data.list[0].main.temp + "°");
         weatherContainer.append(currentTemp);
