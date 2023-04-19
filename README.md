@@ -17,12 +17,9 @@ This project provided me with experience working with third-party APIs and using
 ![Screenshot](./assets/images/screenshot.jpg)
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Usage
